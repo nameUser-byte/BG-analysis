@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>오버레이 불량 타겟팅 요약 보고서 (Easy Version)</title>
+<style>
+    body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.8; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fcfcfc; }
+    h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    h2 { color: #2980b9; margin-top: 30px; }
+    .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .highlight { background-color: #ffeaa7; padding: 2px 5px; font-weight: bold; }
+    .conclusion { border-left: 5px solid #27ae60; background-color: #f4fff8; padding: 15px; font-weight: bold; }
+    
+    /* Tooltip CSS (Fixed: Show BELOW the text to prevent cutoff at top of screen) */
+    .tooltip { position: relative; display: inline-block; border-bottom: 2px dotted #3498db; color: #2980b9; cursor: help; font-weight: bold; }
+    .tooltip .tooltiptext { 
+        visibility: hidden; width: 250px; background-color: #2c3e50; color: #fff; text-align: left; 
+        border-radius: 6px; padding: 10px; position: absolute; z-index: 100; 
+        top: 130%; left: 50%; transform: translateX(-50%); /* Centered below the word */
+        opacity: 0; transition: opacity 0.3s; font-size: 0.9em; font-weight: normal; line-height: 1.5; box-shadow: 0px 4px 8px rgba(0,0,0,0.2); 
+    }
+    .tooltip .tooltiptext::after { 
+        content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; 
+        border-width: 5px; border-style: solid; border-color: transparent transparent #2c3e50 transparent; /* Arrow pointing up */
+    }
+    .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+</style>
+</head>
+<body>
+<h1>💡 반도체 오버레이 최적화 요약 보고서</h1>
+<p>이 문서는 <span class="tooltip">오버레이<span class="tooltiptext">반도체를 층층이 쌓을 때, 아래층과 위층의 회로가 정확하게 딱 맞아떨어지는지(정렬)를 나타내는 지표입니다. 빗나가면 불량이 됩니다.</span></span> 데이터의 극심한 한계를 뚫고, 가장 확실한 불량 원인을 찾아낸 실증 분석 요약본입니다.</p>
+
+<div class="card">
+<h2>1. 가짜 에러를 걷어내다</h2>
+<p>이번 분석의 첫 번째 성과는 엄청나게 틀어진 칩들의 90% 이상이 <strong>'진짜 공정 불량'이 아니라 '<span class="tooltip">계측 불량<span class="tooltiptext">칩이 진짜로 휜 것이 아니라, 칩의 상태를 확인하는 카메라(계측기) 렌즈에 먼지가 묻어 불량으로 오해한 것을 뜻합니다.</span></span>'</strong>이라는 것을 증명해낸 것입니다. 
+마크에 먼지가 묻어 센서가 흐려지는 <span class="tooltip">계측 품질 (Align Quality)<span class="tooltiptext">장비가 위치를 읽어들이는 신호의 선명도입니다. 1.0을 넘어가면 신호를 믿을 수 없는 오염 상태입니다.</span></span> 저하 데이터를 모두 걸러내고, 순수한 진짜 불량 4개를 찾아냈습니다.</p>
+</div>
+
+<div class="card">
+<h2>2. 범인은 명확하다: 장비 T04와 원판 1.0</h2>
+<p>진짜로 칩이 틀어져 버린 4개의 불량은 대체 어디서 터졌을까요? 데이터를 이 잡듯 뒤진 결과, 명백한 혐의점을 찾았습니다.</p>
+<ul>
+    <li>전체 노광 장비 중 <strong><span class="highlight">T04 장비</span></strong>의 <span class="tooltip">잔차(Residual)<span class="tooltiptext">기계의 영점을 아무리 완벽하게 맞춰도, 렌즈 굴곡 등으로 인해 어쩔 수 없이 남게 되는 '지울 수 없는 찌그러짐'을 의미합니다.</span></span>가 무려 40% 이상 높았습니다.</li>
+    <li>전체 <span class="tooltip">원판(Reticle)<span class="tooltiptext">도장 찍기에서 '도장 고무판'에 해당하는 원본 틀입니다. 이것이 찌그러져 있으면 아무리 잘 찍어도 칩이 찌그러집니다.</span></span> 중 <strong><span class="highlight">1.0 번 원판</span></strong>의 오차가 가장 컸습니다.</li>
+    <li>놀랍게도 가장 심각한 불량들은 <strong>이 두 녀석이 만났을 때 (T04 장비 + 1.0 원판 조합)</strong> 집중적으로 터졌습니다.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>3. 날씨(온도)는 무죄</h2>
+<p>혹시 장비 주변의 온도 변화가 오차를 만들었을지 검증해보았으나, 온도와 오차의 <span class="tooltip">상관계수<span class="tooltiptext">두 가지 현상이 서로 얼마나 끈끈하게 연결되어 있는지를 나타내는 수치입니다. 0에 가까울수록 아무 관계가 없다는 뜻입니다.</span></span>는 '0.002'로 <strong>완벽하게 0 (아무 관련 없음)</strong>이었습니다. 공장 내 온도 제어는 아주 훌륭하게 이루어지고 있습니다.</p>
+</div>
+
+<div class="conclusion">
+<h2>🚀 최종 제안: 당장 내일 해야 할 일</h2>
+<p>1. <strong>장비 수리:</strong> 내일 아침 당장 <strong>T04</strong> 노광 장비의 렌즈와 스테이지 정렬을 뜯어봐야 합니다.</p>
+<p>2. <strong>원판 교체:</strong> 불량을 뿜어내는 <strong>1.0 번 원판(Reticle)</strong>이 틀어지거나 변형이 없는지 정밀 점검하고 교체해야 합니다.</p>
+<p>3. <strong>센서 닦기:</strong> 가짜 에러를 막기 위해 계측 장비의 렌즈와 센서를 주기적으로 깨끗하게 닦아야 합니다.</p>
+</div>
+
+</body>
+</html>

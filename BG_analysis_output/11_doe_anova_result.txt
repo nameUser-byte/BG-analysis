@@ -1,0 +1,14 @@
+=== Minitab Style ANOVA Results ===
+                           sum_sq    df           F        PR(>F)
+Feed_Rate               31.818072   1.0  171.799501  5.670447e-10
+RPM                      6.493657   1.0   35.062056  2.150068e-05
+Feed_Rate:RPM            0.753335   1.0    4.067581  6.081691e-02
+Pressure                76.538376   1.0  413.263720  7.440185e-13
+Feed_Rate:Pressure      14.688490   1.0   79.309497  1.343142e-07
+RPM:Pressure             2.061861   1.0   11.132876  4.183866e-03
+Feed_Rate:RPM:Pressure   0.108844   1.0    0.587694  4.544755e-01
+Residual                 2.963275  16.0         NaN           NaN
+
+=== Response Optimizer ===
+최적 조건: Feed_Rate=Low(1.0), RPM=High(5000), Pressure=Low(10)
+예상 불량수(Crack): 평균 1.40개 (기존 평균 3.5개 대비 대폭 감소)

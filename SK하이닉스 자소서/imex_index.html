@@ -1,0 +1,870 @@
+<!doctype html>
+
+<html lang="ko">
+
+  <head>
+
+
+
+    <script>
+
+      if (!window.location.search) {
+
+        window.location.replace(window.location.pathname + '?seat=I23&format=1.43&model=1.3%2C0.475%2C11.4%2C-0.5%2C1.248%2C1.5%2C1.1');
+
+      }
+
+    </script>
+
+
+
+    <meta name="color-scheme" content="light">
+
+    <script>
+
+    (function(window, document, mode) {
+
+      try {
+
+        document.documentElement.dataset.seed = '';
+
+        document.documentElement.dataset.seedColorMode = mode;
+
+      } catch (e) {}
+
+
+
+      try {
+
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+
+
+        if ('addEventListener' in prefersDark) {
+
+          prefersDark.addEventListener('change', apply);
+
+        } else if ('addListener' in prefersDark) {
+
+          prefersDark.addListener(apply);
+
+        }
+
+
+
+        if (prefersDark.matches) {
+
+          document.documentElement.dataset.seedUserColorScheme = 'light';
+
+        } else {
+
+          document.documentElement.dataset.seedUserColorScheme = 'light';
+
+        }
+
+
+
+        function apply() {
+
+          document.documentElement.dataset.seedUserColorScheme = 'light';
+
+        }
+
+      } catch (e) {}
+
+
+
+      try {
+
+        if (typeof window.AndroidFunction !== 'undefined') {
+
+          document.documentElement.dataset.seedPlatform = 'android';
+
+        } else if (typeof window.webkit !== 'undefined' && typeof window.webkit.messageHandlers !== 'undefined') {
+
+          document.documentElement.dataset.seedPlatform = 'ios';
+
+        } else {
+
+          document.documentElement.dataset.seedPlatform = 'ios';
+
+        }
+
+      } catch (e) {}
+
+
+
+      try {
+
+        if (false) {
+
+          var platform = document.documentElement.dataset.seedPlatform;
+
+
+
+          if (platform === 'ios') {
+
+            document.documentElement.dataset.seedFontScaling = 'enabled';
+
+
+
+            function applyIOSFontScaling() {
+
+              try {
+
+                var tempEl = document.createElement('div');
+
+                tempEl.style.cssText = 'position:absolute;visibility:hidden;font-size:16px;font:-apple-system-body;';
+
+                document.body.appendChild(tempEl);
+
+                var size = parseFloat(window.getComputedStyle(tempEl).fontSize);
+
+                document.body.removeChild(tempEl);
+
+                var mult = Math.max(0.8, Math.min(1.35, (size / 16) * 0.9412));
+
+                document.documentElement.dataset.seedFontMultiplier = parseFloat(mult.toFixed(2)).toString();
+
+              } catch (e) {}
+
+            }
+
+
+
+            if (document.readyState === 'loading') {
+
+              document.addEventListener('DOMContentLoaded', applyIOSFontScaling);
+
+            } else {
+
+              applyIOSFontScaling();
+
+            }
+
+          } else if (platform === 'android') {
+
+            var fontSize = parseFloat(window.getComputedStyle(document.documentElement).fontSize);
+
+            var scale = Math.max(0.8, Math.min(1.5, fontSize / 16));
+
+            document.documentElement.dataset.seedFontMultiplier = parseFloat(scale.toFixed(2)).toString();
+
+            document.documentElement.dataset.seedFontScaling = 'enabled';
+
+          }
+
+        }
+
+      } catch (e) {}
+
+    })(window, document, 'light-only');
+
+  </script>
+
+
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+
+    <meta
+
+      name="description"
+
+      content="CGV ?⑹궛 IMAX 醫뚯꽍蹂??ㅽ겕由??쒖빞瑜??댄렣蹂대뒗 鍮꾧났??3D ?쒕??덉씠??
+
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:locale" content="ko_KR" />
+
+    <meta property="og:url" content="https://xn--ok1b36l89jvnq.kr/" />
+
+    <meta property="og:title" content="Screen / Seat Lab" />
+
+    <meta property="og:description" content="?⑹궛 IMAX 醫뚯꽍蹂??ㅽ겕由??쒖빞瑜?鍮꾧탳?섎뒗 鍮꾧났??3D ?쒕??덉씠?? />
+
+    <meta property="og:image" content="https://xn--ok1b36l89jvnq.kr/og-image.png" />
+
+    <meta property="og:image:width" content="1200" />
+
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content="Screen / Seat Lab" />
+
+    <meta name="twitter:description" content="?⑹궛 IMAX 醫뚯꽍蹂??ㅽ겕由??쒖빞瑜??ㅼ륫쨌?ъ쭊 湲곕컲?쇰줈 鍮꾧탳??蹂댁꽭??" />
+
+    <meta name="twitter:image" content="https://xn--ok1b36l89jvnq.kr/og-image.png" />
+
+    <meta name="theme-color" content="#070a0a" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="apple-mobile-web-app-title" content="Seat Lab" />
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css"
+
+    />
+
+    <link rel="manifest" href="./manifest.webmanifest" />
+
+    <link rel="icon" href="./seat-lab-icon.svg" type="image/svg+xml" />
+
+    <link rel="apple-touch-icon" href="./seat-lab-icon-192.png" />
+
+    <link rel="canonical" href="https://xn--ok1b36l89jvnq.kr/" />
+
+    <title>Screen / Seat Lab</title>
+
+    <script type="module" crossorigin src="./assets/index-rvd9Zhdh.js"></script>
+
+    <link rel="modulepreload" crossorigin href="./assets/icons-B-CWKzv0.js">
+
+    <link rel="stylesheet" crossorigin href="./assets/index-BTrpnw3r.css">
+
+  
+
+<style>
+
+html {
+
+    filter: invert(1) hue-rotate(180deg);
+
+    background: white;
+
+}
+
+img, video, canvas, .seat, .custom-ui-element {
+
+    filter: invert(1) hue-rotate(180deg);
+
+}
+
+</style>
+
+<style>
+/* HIDE REACT PANEL */
+
+</style>
+
+<style id="strategy-css-hijack">
+.seat-review-panel {
+    background: white !important;
+    border-radius: 12px !important;
+    padding: 15px !important;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    margin-bottom: 15px !important;
+    position: relative !important;
+    display: block !important;
+    transition: transform 0.2s !important;
+}
+.seat-review-panel > * {
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    pointer-events: none !important;
+    position: absolute !important;
+}
+.seat-review-panel::before {
+    content: '🎫';
+    display: block !important;
+    font-size: 24px !important;
+    margin-bottom: 5px !important;
+    visibility: visible !important;
+}
+.seat-review-panel::after {
+    content: '예매 전략 세우기\A 클릭하여 미니맵 열기';
+    white-space: pre-wrap !important;
+    display: block !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #111 !important;
+    line-height: 1.4 !important;
+    visibility: visible !important;
+}
+.seat-review-panel:hover {
+    transform: translateY(-2px) !important;
+}
+</style>
+
+</head>
+
+
+
+  <body>
+
+    <div id="root"></div>
+
+  
+    
+    
+    
+
+    
+
+    <!-- CUSTOM UI OVERLAY -->
+    <!-- Mode Toggle (Top Center) -->
+    <div id="mode-toggle-container" class="custom-ui-element" style="position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; background: #ffffff; border-radius: 30px; display: flex; padding: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); border: 1px solid #eaeaea;">
+      <button id="btn-simple" style="border: none; background: #222; padding: 6px 16px; border-radius: 20px; font-weight: bold; color: white; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size: 14px; transition: all 0.2s;">간편 모드</button>
+      <button id="btn-expert" style="border: none; background: transparent; padding: 6px 16px; border-radius: 20px; font-weight: bold; color: #888; cursor: pointer; font-size: 14px; transition: all 0.2s;">전문가 모드</button>
+    </div>
+
+    <!-- Simple Mode Bottom Panel -->
+    <div id="simple-mode-panel" class="custom-ui-element" style="position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 750px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 16px; z-index: 999; display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); border: 1px solid #eaeaea; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s;">
+      <div style="display: flex; flex-direction: column; gap: 4px; flex: 1;">
+        <div style="display: flex; align-items: baseline; gap: 10px;">
+          <h2 id="current-seat-title" style="margin: 0; font-size: 20px; color: #111; font-weight: 800;">좌석 선택중</h2>
+          <div id="current-seat-stars" style="font-size: 16px; color: #f5a623; letter-spacing: 1px;">☆☆☆☆☆ <span style="color: #666; font-size: 13px; font-weight: 600;">(0)</span></div>
+        </div>
+        <p id="current-seat-review" style="color: #555; margin: 0; font-size: 13px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">아직 등록된 리뷰가 없습니다. 첫 리뷰를 남겨주세요!</p>
+      </div>
+      
+      <div style="display: flex; align-items: center; gap: 10px; margin-left: 20px;">
+        <button id="btn-open-leaderboard" style="background: #f0f0f0; color: #333; border: 1px solid #ddd; padding: 10px 16px; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 13px; transition: background 0.2s;">🏅 순위표</button>
+        <button id="btn-write-review" style="background: #111; color: white; border: none; padding: 10px 16px; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 13px; transition: transform 0.2s;">✏️ 평가하기</button>
+      </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div id="review-modal" class="custom-ui-element" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 25px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); z-index: 2000; width: 90%; max-width: 400px; flex-direction: column; gap: 15px; border: 1px solid #eee;">
+      <h3 style="margin: 0; color: #111; font-size: 18px;">리뷰 작성하기</h3>
+      <div style="display: flex; gap: 10px; font-size: 24px; cursor: pointer;" id="star-selector">
+        <span data-val="1">☆</span><span data-val="2">☆</span><span data-val="3">☆</span><span data-val="4">☆</span><span data-val="5">☆</span>
+      </div>
+      <textarea id="review-text" rows="3" placeholder="예: 화면이 한눈에 들어와요!" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 14px; box-sizing: border-box; resize: none;"></textarea>
+      <div style="display: flex; justify-content: flex-end; gap: 10px;">
+        <button id="btn-cancel-review" style="padding: 8px 16px; border: none; background: #eee; border-radius: 8px; font-weight: bold; cursor: pointer; color: #555;">취소</button>
+        <button id="btn-submit-review" style="padding: 8px 16px; border: none; background: #111; color: white; border-radius: 8px; font-weight: bold; cursor: pointer;">등록하기</button>
+      </div>
+    </div>
+
+    <!-- Leaderboard Modal -->
+    <div id="leaderboard-modal" class="custom-ui-element" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 25px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); z-index: 2000; width: 90%; max-width: 450px; max-height: 80vh; flex-direction: column; gap: 15px; border: 1px solid #eee;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="margin: 0; color: #111; font-size: 20px;">🏅 유저 평점 리더보드</h3>
+        <button id="btn-close-leaderboard" style="background: none; border: none; font-size: 20px; cursor: pointer; color: #888;">✕</button>
+      </div>
+      <p style="margin: 0; font-size: 13px; color: #666;">유저들이 남긴 실시간 평점 랭킹입니다. (클릭 시 이동)</p>
+      <div id="leaderboard-list" style="display: flex; flex-direction: column; gap: 8px; overflow-y: auto; padding-right: 5px;"></div>
+    </div>
+
+    <!-- Strategy Modal (Popup) -->
+    <div id="strategy-modal" class="custom-ui-element" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 12px; box-shadow: 0 10px 50px rgba(0,0,0,0.3); z-index: 2500; width: 95%; max-width: 550px; flex-direction: column; gap: 15px; border: 1px solid #eee;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="margin: 0; color: #111; font-size: 18px; font-weight: 800;">🎫 예매 전략 시뮬레이터</h3>
+        <button id="btn-close-strategy" style="background: none; border: none; font-size: 20px; cursor: pointer; color: #888;">✕</button>
+      </div>
+      
+      <div style="display: flex; gap: 10px; flex-direction: column; background: #f8f9fa; padding: 12px; border-radius: 8px; border: 1px solid #eee;">
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <input type="date" id="strategy-date" style="padding: 8px; border-radius: 6px; border: 1px solid #ccc; font-family: inherit; font-size: 13px; flex: 1;">
+            <div style="display: flex; gap: 4px; flex: 2;">
+            <button class="strat-time-btn active" data-time="오전" style="flex: 1; padding: 8px 0; border-radius: 6px; border: 1px solid #111; background: #111; color: white; cursor: pointer; font-size: 12px; font-weight: bold;">오전</button>
+            <button class="strat-time-btn" data-time="점심" style="flex: 1; padding: 8px 0; border-radius: 6px; border: 1px solid #ccc; background: white; color: #333; cursor: pointer; font-size: 12px; font-weight: bold;">점심</button>
+            <button class="strat-time-btn" data-time="저녁" style="flex: 1; padding: 8px 0; border-radius: 6px; border: 1px solid #ccc; background: white; color: #333; cursor: pointer; font-size: 12px; font-weight: bold;">저녁</button>
+            <button class="strat-time-btn" data-time="밤" style="flex: 1; padding: 8px 0; border-radius: 6px; border: 1px solid #ccc; background: white; color: #333; cursor: pointer; font-size: 12px; font-weight: bold;">밤</button>
+            </div>
+        </div>
+      </div>
+
+      <div style="background: #f8f9fa; border-radius: 8px; padding: 15px 10px;">
+        <div style="background: #333; color: #fff; font-size: 11px; font-weight: bold; text-align: center; padding: 4px 0; border-radius: 4px; margin: 0 15px 15px 15px; letter-spacing: 2px;">SCREEN</div>
+        <button id="btn-reset-strategy" style="background: #e74c3c; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px;">내 투표 초기화 (다시하기)</button>
+      <div id="strategy-grid" style="display: grid; grid-template-columns: 1.2fr 0.8fr 1fr 0.8fr 1.2fr; gap: 6px; position: relative;"></div>
+      </div>
+      <div style="font-size: 11px; color: #888; text-align: center;">구역을 클릭하여 목표로 등록하세요.</div>
+    </div>
+
+    <!-- App Logic -->
+    
+
+
+
+    
+
+
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
+      import { getFirestore, collection, addDoc, getDocs, query, where, serverTimestamp, doc, deleteDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
+
+      const app = initializeApp({
+        apiKey: "AIzaSyB2AupQw7tPO0qfOcBAmD4Fp6jGrdMhyeM",
+        authDomain: "seat-lab.firebaseapp.com",
+        projectId: "seat-lab"
+      });
+      const db = getFirestore(app);
+
+      // Modes
+      const setMode = (isSimple) => {
+        const p = document.getElementById('simple-mode-panel');
+        if(isSimple) {
+          document.getElementById('btn-simple').style.background = '#222'; document.getElementById('btn-simple').style.color = 'white';
+          document.getElementById('btn-expert').style.background = 'transparent'; document.getElementById('btn-expert').style.color = '#888';
+          p.style.transform = 'translateX(-50%) translateY(0)'; p.style.opacity = '1'; p.style.pointerEvents = 'auto';
+          if(!document.getElementById('mode-style-override')) {
+            const style = document.createElement('style'); style.id = 'mode-style-override';
+            style.textContent = `.desktop-metrics { display: none !important; } .mobile-results { display: none !important; }`;
+            document.head.appendChild(style);
+          }
+        } else {
+          document.getElementById('btn-expert').style.background = '#222'; document.getElementById('btn-expert').style.color = 'white';
+          document.getElementById('btn-simple').style.background = 'transparent'; document.getElementById('btn-simple').style.color = '#888';
+          p.style.transform = 'translateX(-50%) translateY(20px) scale(0.95)'; p.style.opacity = '0'; p.style.pointerEvents = 'none';
+          const style = document.getElementById('mode-style-override'); if(style) style.remove();
+        }
+      };
+      document.getElementById('btn-simple').addEventListener('click', () => setMode(true));
+      document.getElementById('btn-expert').addEventListener('click', () => setMode(false));
+      setMode(true);
+
+      // Reviews
+      let currentSeat = '';
+      let topSeatsData = [];
+      
+      const getZoneName = (seatStr) => {
+         const row = seatStr.charAt(0);
+         const col = parseInt(seatStr.slice(1));
+         if (!row || isNaN(col)) return '기타 구역';
+         
+         let rName = '';
+         if (row >= 'A' && row <= 'D') rName = 'A-D열';
+         else if (row >= 'E' && row <= 'H') rName = 'E-H열';
+         else if (row >= 'I' && row <= 'M') rName = 'I-M열';
+         else rName = 'N-P열';
+         
+         let cName = '';
+         if (col <= 12) cName = '좌측(Left)';
+         else if (col >= 13 && col <= 33) cName = '중앙(Center)';
+         else cName = '우측(Right)';
+         
+         return `${rName} ${cName}`;
+      };
+
+      const loadTopSeats = async () => {
+        try {
+          const snap = await getDocs(query(collection(db, "reviews")));
+          const stats = {};
+          
+          snap.forEach(d => {
+            const data = d.data();
+            const zone = getZoneName(data.seat);
+            if(!stats[zone]) stats[zone] = {sum:0, count:0, seats: new Set()};
+            stats[zone].sum += data.rating; 
+            stats[zone].count++;
+            stats[zone].seats.add(data.seat);
+          });
+          
+          topSeatsData = Object.keys(stats).map(z => ({ 
+             zone: z, 
+             avg: stats[z].sum/stats[z].count, 
+             count: stats[z].count,
+             sampleSeat: Array.from(stats[z].seats)[0] // for clicking navigation
+          })).sort((a,b) => b.avg - a.avg || b.count - a.count);
+        } catch(e) {}
+      };
+      
+      window.deleteReview = async (docId, seat) => {
+        if(!confirm('이 리뷰를 삭제하시겠습니까?')) return;
+        try {
+          await deleteDoc(doc(db, "reviews", docId));
+          const myReviewSeats = JSON.parse(localStorage.getItem('myReviewSeats') || '{}');
+          delete myReviewSeats[seat];
+          localStorage.setItem('myReviewSeats', JSON.stringify(myReviewSeats));
+          alert('삭제되었습니다.');
+          loadSeatReviews(seat); loadTopSeats();
+        } catch(e) { alert('삭제 실패!'); }
+      };
+
+      const loadSeatReviews = async (seat) => {
+        try {
+          const targetZone = getZoneName(seat);
+          const snap = await getDocs(query(collection(db, "reviews")));
+          const reviewContainer = document.getElementById('current-seat-review');
+          
+          let sum=0; let all=[];
+          snap.forEach(d => { 
+             const dt=d.data(); 
+             if(getZoneName(dt.seat) === targetZone) {
+                 sum+=dt.rating; 
+                 all.push({id: d.id, ...dt}); 
+             }
+          });
+          
+          if(all.length === 0) {
+            document.getElementById('current-seat-stars').innerHTML = `☆☆☆☆☆ <span style="color: #666; font-size: 13px; font-weight: 600;">(0)</span>`;
+            reviewContainer.style.cssText = 'color: #888; font-style: italic; margin-top: 5px;';
+            reviewContainer.innerHTML = `아직 이 구역에 등록된 리뷰가 없습니다. 첫 리뷰를 남겨주세요!`;
+            return;
+          }
+          
+          const avg = (sum/all.length).toFixed(1);
+          document.getElementById('current-seat-stars').innerHTML = `${'★'.repeat(Math.round(avg)) + '☆'.repeat(5-Math.round(avg))} <span style="color: #666; font-size: 13px; font-weight: 600;">(${avg} / ${all.length}명 참여)</span>`;
+          all.sort((a,b) => (b.createdAt?.toMillis()||0) - (a.createdAt?.toMillis()||0));
+          
+          
+          const myReviews = JSON.parse(localStorage.getItem('myReviews') || '{}');
+          
+          let breakdown = {5:0, 4:0, 3:0, 2:0, 1:0};
+          all.forEach(rv => breakdown[rv.rating]++);
+          let breakdownHtml = '<div style="display:flex; flex-direction:column; gap:4px; margin-bottom:12px; padding:10px; background:rgba(0,0,0,0.02); border-radius:8px; font-size:11px; color:#555; border:1px solid #f1f2f6;">';
+          for(let i=5; i>=1; i--) {
+             let pct = all.length > 0 ? (breakdown[i]/all.length)*100 : 0;
+             breakdownHtml += `
+                <div style="display:flex; align-items:center; gap:8px;">
+                   <div style="width:25px; text-align:right; font-weight:bold; color:#777;">${i}점</div>
+                   <div style="flex-grow:1; height:8px; background:#eaeaea; border-radius:4px; overflow:hidden;">
+                      <div style="width:${pct}%; height:100%; background:#f5a623; border-radius:4px;"></div>
+                   </div>
+                   <div style="width:25px; text-align:left; color:#999; font-size:10px;">${breakdown[i]}</div>
+                </div>
+             `;
+          }
+          breakdownHtml += '</div>';
+        
+          
+          let htmlList = '';
+          all.forEach(rv => {
+              const isMine = myReviews[rv.id];
+              const delBtn = isMine ? ` <div onclick="window.deleteReview('${rv.id}', '${seat}')" style="color:#e74c3c; cursor:pointer; font-size:10px; font-weight:bold; padding:3px 6px; background:#fff; border:1px solid #e74c3c; border-radius:4px; flex-shrink:0; transition: background 0.1s;" onmouseover="this.style.background='#ffeaea'" onmouseout="this.style.background='#fff'">삭제</div>` : '';
+              const stars = '★'.repeat(rv.rating) + '☆'.repeat(5-rv.rating);
+              
+              const dateStr = rv.createdAt ? new Date(rv.createdAt.toMillis()).toLocaleDateString() : '';
+              
+              htmlList += `
+                <div style="display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; background: #f8f9fa; border: 1px solid #eee; border-radius: 8px;">
+                   <div style="flex-grow: 1;">
+                      <div style="font-size: 11px; color: #f39c12; margin-bottom: 3px;">
+                          <span style="background: #eee; color: #555; padding: 2px 4px; border-radius: 4px; font-weight: bold; margin-right: 4px;">${rv.seat}</span> 
+                          ${stars} <span style="color:#aaa; font-size:10px; margin-left:6px;">${dateStr}</span>
+                      </div>
+                      <div style="font-size: 13px; color: #222; line-height: 1.4; word-break: break-all;">"${rv.text}"</div>
+                   </div>
+                   ${delBtn}
+                </div>
+              `;
+          });
+          
+          reviewContainer.style.cssText = 'max-height: 140px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; padding-right: 5px; margin-top: 12px; border-top: 1px dashed #ddd; padding-top: 12px;';
+          reviewContainer.innerHTML = breakdownHtml + htmlList;
+          
+        } catch(e) {}
+      };
+      
+      setInterval(() => {
+        const seat = new URLSearchParams(window.location.search).get('seat');
+        if(seat && currentSeat !== seat) {
+          currentSeat = seat; 
+          document.getElementById('current-seat-title').textContent = getZoneName(seat) + ' 평가';
+          loadSeatReviews(seat);
+        }
+      }, 500);
+
+      // Review Modals
+      let selRating = 5;
+      document.getElementById('btn-write-review').addEventListener('click', () => { 
+        if(!currentSeat) return; 
+        const myReviewSeats = JSON.parse(localStorage.getItem('myReviewSeats') || '{}');
+        if (myReviewSeats[currentSeat]) return alert('이미 이 좌석에 평가를 남기셨습니다. (기기당 1회 제한)');
+        document.getElementById('review-modal').style.display='flex'; 
+      });
+      document.getElementById('btn-cancel-review').addEventListener('click', () => document.getElementById('review-modal').style.display='none');
+      document.getElementById('star-selector').addEventListener('click', (e) => {
+        if(e.target.tagName==='SPAN') {
+          selRating = parseInt(e.target.dataset.val);
+          Array.from(document.getElementById('star-selector').children).forEach((sp, i) => {
+            sp.textContent = i < selRating ? '★' : '☆'; sp.style.color = i < selRating ? '#f5a623' : '#ccc';
+          });
+        }
+      });
+      document.getElementById('btn-submit-review').addEventListener('click', async () => {
+        const text = document.getElementById('review-text').value.trim();
+        if(!text) return;
+        try {
+          const docRef = await addDoc(collection(db, "reviews"), { seat: currentSeat, rating: selRating, text, createdAt: serverTimestamp() });
+          
+          const myReviews = JSON.parse(localStorage.getItem('myReviews') || '{}');
+          
+          let breakdown = {5:0, 4:0, 3:0, 2:0, 1:0};
+          all.forEach(rv => breakdown[rv.rating]++);
+          let breakdownHtml = '<div style="display:flex; flex-direction:column; gap:4px; margin-bottom:12px; padding:10px; background:rgba(0,0,0,0.02); border-radius:8px; font-size:11px; color:#555; border:1px solid #f1f2f6;">';
+          for(let i=5; i>=1; i--) {
+             let pct = all.length > 0 ? (breakdown[i]/all.length)*100 : 0;
+             breakdownHtml += `
+                <div style="display:flex; align-items:center; gap:8px;">
+                   <div style="width:25px; text-align:right; font-weight:bold; color:#777;">${i}점</div>
+                   <div style="flex-grow:1; height:8px; background:#eaeaea; border-radius:4px; overflow:hidden;">
+                      <div style="width:${pct}%; height:100%; background:#f5a623; border-radius:4px;"></div>
+                   </div>
+                   <div style="width:25px; text-align:left; color:#999; font-size:10px;">${breakdown[i]}</div>
+                </div>
+             `;
+          }
+          breakdownHtml += '</div>';
+        
+          myReviews[docRef.id] = true;
+          localStorage.setItem('myReviews', JSON.stringify(myReviews));
+          
+          const myReviewSeats = JSON.parse(localStorage.getItem('myReviewSeats') || '{}');
+          myReviewSeats[currentSeat] = true;
+          localStorage.setItem('myReviewSeats', JSON.stringify(myReviewSeats));
+          
+          document.getElementById('review-modal').style.display='none';
+          alert('등록 성공!'); loadSeatReviews(currentSeat); loadTopSeats();
+        } catch(e) {}
+      });
+
+      
+      // My Reviews Management
+      window.openMyReviewsModal = async () => {
+         document.getElementById('my-reviews-modal').style.display = 'flex';
+         const listEl = document.getElementById('my-reviews-list');
+         listEl.innerHTML = '<div style="text-align:center; padding:20px; color:#888;">로딩 중...</div>';
+         
+         const myReviews = JSON.parse(localStorage.getItem('myReviews') || '{}');
+         const docIds = Object.keys(myReviews);
+         
+         if(docIds.length === 0) {
+             listEl.innerHTML = '<div style="text-align:center; padding:20px; color:#888;">작성한 리뷰가 없습니다.</div>';
+             return;
+         }
+         
+         try {
+             const snap = await getDocs(query(collection(db, "reviews")));
+             const myDocs = [];
+             snap.forEach(d => { if(myReviews[d.id]) myDocs.push({id: d.id, ...d.data()}); });
+             
+             if(myDocs.length === 0) {
+                 listEl.innerHTML = '<div style="text-align:center; padding:20px; color:#888;">작성한 리뷰가 없습니다.</div>';
+                 return;
+             }
+             
+             myDocs.sort((a,b) => (b.createdAt?.toMillis()||0) - (a.createdAt?.toMillis()||0));
+             
+             let html = '';
+             myDocs.forEach(rv => {
+                 const stars = '★'.repeat(rv.rating) + '☆'.repeat(5-rv.rating);
+                 const dateStr = rv.createdAt ? new Date(rv.createdAt.toMillis()).toLocaleDateString() : '';
+                 html += `
+                    <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px; background: #f8f9fa; border: 1px solid #eee; border-radius: 8px;">
+                       <div style="flex-grow: 1;">
+                          <div style="font-size: 12px; color: #f39c12; margin-bottom: 4px;">
+                              <span style="background: #333; color: #fff; padding: 2px 6px; border-radius: 4px; font-weight: bold; margin-right: 6px;">${rv.seat}</span> 
+                              ${stars} <span style="color:#aaa; font-size:11px; margin-left:6px;">${dateStr}</span>
+                          </div>
+                          <div style="font-size: 14px; color: #222; line-height: 1.4;">"${rv.text}"</div>
+                       </div>
+                       <div onclick="window.deleteReview('${rv.id}', '${rv.seat}')" style="color:white; cursor:pointer; font-size:12px; font-weight:bold; padding:6px 12px; background:#e74c3c; border-radius:6px; flex-shrink:0; margin-left:10px; transition: background 0.1s;" onmouseover="this.style.background='#c0392b'" onmouseout="this.style.background='#e74c3c'">삭제</div>
+                    </div>
+                 `;
+             });
+             listEl.innerHTML = html;
+         } catch(e) { listEl.innerHTML = '<div style="color:red; text-align:center;">오류가 발생했습니다.</div>'; }
+      };
+      
+      document.getElementById('btn-close-my-reviews').addEventListener('click', () => document.getElementById('my-reviews-modal').style.display = 'none');
+      
+      // Inject the button next to leaderboard
+      setInterval(() => {
+          const lbBtn = document.getElementById('btn-open-leaderboard');
+          if (lbBtn && !document.getElementById('btn-my-reviews')) {
+              const myBtn = document.createElement('button');
+              myBtn.id = 'btn-my-reviews';
+              myBtn.innerHTML = '👤 내 리뷰';
+              myBtn.style.cssText = 'background: #f1f2f6; color: #333; border: 1px solid #ddd; padding: 8px 14px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-right: 8px; font-size: 13px; transition: background 0.2s;';
+              myBtn.onmouseover = () => myBtn.style.background = '#e2e4e9';
+              myBtn.onmouseout = () => myBtn.style.background = '#f1f2f6';
+              myBtn.onclick = () => window.openMyReviewsModal();
+              lbBtn.parentNode.insertBefore(myBtn, lbBtn);
+          }
+      }, 500);
+    
+      // Leaderboard (Block Aggregation)
+      document.getElementById('btn-open-leaderboard').addEventListener('click', () => {
+        document.getElementById('leaderboard-modal').style.display='flex';
+        
+        if (topSeatsData.length === 0) {
+            document.getElementById('leaderboard-list').innerHTML = '<div style="padding:20px; text-align:center; color:#888;">아직 평가된 구역이 없습니다.</div>';
+            return;
+        }
+        
+        document.getElementById('leaderboard-list').innerHTML = topSeatsData.map((s,i) => {
+          return `<div onclick="const u=new URLSearchParams(window.location.search);u.set('seat','${s.sampleSeat}');window.location.search=u.toString();" title="클릭 시 이 구역의 한 좌석(${s.sampleSeat})으로 이동합니다" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 15px; background: ${i<3?'#fff9f0':'#f8f9fa'}; border-radius: 8px; border: 1px solid ${i<3?'#ffe8c4':'#eee'}; cursor: pointer; margin-bottom: 8px; transition: transform 0.1s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 16px; font-weight: 900; color: ${i<3?'#d35400':'#333'};">${i+1}위. ${s.zone}</span>
+                </div>
+                <span style="font-size: 11px; color: #888;">총 ${s.count}개의 리뷰 종합됨</span>
+            </div>
+            <div style="text-align: right;">
+                <div style="color: #f5a623; font-weight: bold; font-size: 18px;">★ ${s.avg.toFixed(2)}</div>
+            </div>
+          </div>`;
+        }).join('');
+      });
+      document.getElementById('btn-close-leaderboard').addEventListener('click', () => document.getElementById('leaderboard-modal').style.display='none');
+
+      // Strategy Modal
+      window.openStrategyModal = () => { document.getElementById('strategy-modal').style.display = 'flex'; loadStratGrid(); };
+      document.getElementById('btn-close-strategy').addEventListener('click', () => document.getElementById('strategy-modal').style.display = 'none');
+      
+      let stratDate = new Date().toISOString().split('T')[0];
+      let stratTime = '오전';
+      document.getElementById('strategy-date').value = stratDate;
+      document.getElementById('strategy-date').addEventListener('change', (e) => { stratDate = e.target.value; loadStratGrid(); });
+      document.querySelectorAll('.strat-time-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          document.querySelectorAll('.strat-time-btn').forEach(b => { b.style.background='white'; b.style.color='#333'; });
+          e.target.style.background='#111'; e.target.style.color='white';
+          stratTime = e.target.dataset.time; loadStratGrid();
+        });
+      });
+
+      const gridRows = [{id:'A_D',n:'A-D'},{id:'E_H',n:'E-H'},{id:'I_M',n:'I-M'},{id:'N_P',n:'N-P'}];
+      const gridCols = [{id:'C1',n:'L'},{id:'C2',n:'LC'},{id:'C3',n:'C'},{id:'C4',n:'RC'},{id:'C5',n:'R'}];
+      
+      let stratUnsubscribe = null;
+      const loadStratGrid = () => {
+        const gridEl = document.getElementById('strategy-grid');
+        gridEl.style.opacity = '0.5';
+        
+        const localKey = `stratVotes_${stratDate}_${stratTime}`;
+        const myVotes = JSON.parse(localStorage.getItem(localKey) || '[]');
+        
+        if (stratUnsubscribe) stratUnsubscribe();
+        
+        stratUnsubscribe = onSnapshot(query(collection(db, "ticket_demands"), where("date", "==", stratDate)), (snap) => {
+          const demands = {};
+          const breakdowns = {};
+          
+          snap.forEach(d => { 
+            const dt = d.data(); 
+            if(dt.timeOfDay === stratTime) {
+              const weight = dt.priority === 1 ? 3 : dt.priority === 2 ? 2 : 1;
+              demands[dt.zone] = (demands[dt.zone]||0) + weight;
+              if(!breakdowns[dt.zone]) breakdowns[dt.zone] = {1:0, 2:0, 3:0};
+              breakdowns[dt.zone][dt.priority] = (breakdowns[dt.zone][dt.priority] || 0) + 1;
+            }
+          });
+          
+          let maxHeat = 1; Object.values(demands).forEach(v => { if(v>maxHeat) maxHeat=v; });
+          
+          let html = '';
+          gridRows.forEach((r, ri) => {
+            gridCols.forEach((c, ci) => {
+              const zid = `${r.id}_${c.id}`;
+              const heat = demands[zid] || 0;
+              const bd = breakdowns[zid] || {1:0, 2:0, 3:0};
+              let bg = '#ffffff'; let br = '#ddd'; let col = '#999';
+              
+              if(heat > 0) {
+                const int = Math.min(heat/maxHeat, 1);
+                bg = `rgba(230,126,34,${0.05 + int*0.8})`; 
+                br = `rgba(211,84,0,${0.3 + int*0.7})`; 
+                col = int > 0.4 ? '#fff' : '#d35400';
+              }
+              
+              let mt = '0px'; if(ri===0 && (ci===0||ci===4)) mt='6px'; if(ri===0 && (ci===1||ci===3)) mt='3px';
+              
+              let myBadge = '';
+              const myVoteData = myVotes.find(v => v.zone === zid);
+              if (myVoteData) {
+                  if (myVoteData.priority === 1) myBadge = '<div style="position:absolute; top:-8px; right:-8px; background:#f1c40f; color:#fff; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.2);">1순위</div>';
+                  else if (myVoteData.priority === 2) myBadge = '<div style="position:absolute; top:-8px; right:-8px; background:#bdc3c7; color:#fff; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.2);">2순위</div>';
+                  else if (myVoteData.priority === 3) myBadge = '<div style="position:absolute; top:-8px; right:-8px; background:#cd7f32; color:#fff; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.2);">3순위</div>';
+              }
+              
+              const tooltip = heat > 0 ? `🔥 가중치 점수: ${heat}점\n[상세 득표]\n🥇 1순위: ${bd[1]}명\n🥈 2순위: ${bd[2]}명\n🥉 3순위: ${bd[3]}명` : `${r.n}열 ${c.n}구역\n아직 투표가 없습니다.`;
+              
+              html += `<div onclick="window.submitStrat('${zid}')" title="${tooltip}" style="position:relative; margin-top: ${mt}; background: ${bg}; border: 1px solid ${br}; border-radius: 6px; padding: 8px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; min-height: 40px; transition: transform 0.1s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                ${myBadge}
+                <span style="font-size: 11px; color: ${heat>0 && (heat/maxHeat)>0.4 ? '#fff' : '#666'};">${r.n}</span>
+                <span style="font-size: 15px; font-weight: 800; color: ${col}; line-height: 1.2;">${heat>0 ? '🔥'+heat : '0'}</span>
+              </div>`;
+            });
+          });
+          gridEl.innerHTML = html;
+          gridEl.style.opacity = '1';
+        }, (error) => { console.error(error); });
+      };
+
+      window.submitStrat = async (zid) => {
+        const localKey = `stratVotes_${stratDate}_${stratTime}`;
+        const myVotes = JSON.parse(localStorage.getItem(localKey) || '[]');
+        
+        if (myVotes.find(v => v.zone === zid)) return alert('이미 해당 구역에 투표하셨습니다.');
+        if (myVotes.length >= 3) return alert('이미 1순위~3순위 투표를 모두 완료하셨습니다!');
+        
+        const priority = myVotes.length + 1;
+        const priorityText = priority === 1 ? '1순위 (초명당)' : priority === 2 ? '2순위 (플랜 B)' : '3순위 (최후의 보루)';
+        
+        if(!confirm(`해당 구역을 [${priorityText}] 목표로 등록하시겠습니까?\n(한 시간대당 3번만 투표 가능합니다)`)) return;
+        
+        document.getElementById('strategy-grid').style.opacity = '0.5';
+        try {
+          const docRef = await addDoc(collection(db, "ticket_demands"), { date: stratDate, timeOfDay: stratTime, zone: zid, priority: priority, createdAt: serverTimestamp() });
+          myVotes.push({ zone: zid, priority: priority, docId: docRef.id });
+          localStorage.setItem(localKey, JSON.stringify(myVotes));
+          // Real-time listener will auto-update the grid!
+        } catch(e) { alert('오류가 발생했습니다.'); document.getElementById('strategy-grid').style.opacity = '1'; }
+      };
+      
+      document.getElementById('btn-reset-strategy').addEventListener('click', async () => {
+         const localKey = `stratVotes_${stratDate}_${stratTime}`;
+         const myVotes = JSON.parse(localStorage.getItem(localKey) || '[]');
+         if(myVotes.length === 0) return alert('초기화할 투표 내역이 없습니다.');
+         if(!confirm(`현재 시간대(${stratDate} ${stratTime})의 내 투표를 모두 취소하시겠습니까?`)) return;
+         
+         document.getElementById('strategy-grid').style.opacity = '0.5';
+         for(const v of myVotes) {
+             try { await deleteDoc(doc(db, "ticket_demands", v.docId)); } catch(e) {}
+         }
+         localStorage.removeItem(localKey);
+         alert('초기화 완료!');
+         // Real-time listener will auto-update!
+      });
+
+      // CSS Click Interceptor (Intercepts React clicks)
+      document.addEventListener('click', (e) => {
+         if (e.target.closest('.seat-review-panel')) {
+             e.preventDefault();
+             e.stopPropagation();
+             window.openStrategyModal();
+         }
+      }, true); 
+
+      loadTopSeats();
+    </script>
+
+    <!-- My Reviews Modal -->
+    <div id="my-reviews-modal" class="custom-ui-element" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 4000; justify-content: center; align-items: center;">
+      <div style="background: white; width: 90%; max-width: 500px; max-height: 80vh; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; box-shadow: 0 10px 40px rgba(0,0,0,0.2);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+          <h2 style="margin: 0; font-size: 18px; color: #111;">👤 내가 쓴 리뷰 관리</h2>
+          <span id="btn-close-my-reviews" style="cursor: pointer; font-size: 24px; color: #888;">&times;</span>
+        </div>
+        <div id="my-reviews-list" style="overflow-y: auto; flex-grow: 1; display: flex; flex-direction: column; gap: 10px; padding-right: 5px;">
+          <!-- Content dynamically loaded -->
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

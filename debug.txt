@@ -1,0 +1,20 @@
+ero);
+
+            document.getElementById('res_rr').innerText = pred_rr.toFixed(1);
+            document.getElementById('res_dish').innerText = pred_dish.toFixed(1);
+            document.getElementById('res_wiwnu').innerText = pred_wiwnu.toFixed(1);
+            document.getElementById('res_ero').innerText = pred_ero.toFixed(1);
+            document.getElementById('res_yield').innerText = pred_yield.toFixed(1);
+
+            let rec = "";
+            if(padAge > 100) rec += "🚨 <b>치명적 위험:</b> 패드(Pad Age) 수명이 다 되어 WIWNU가 폭증하여 수율이 박살나고 있습니다! 당장 교체하세요.<br>";
+            if(pred_dish > 60) rec += "⚠️ <b>경고:</b> Dishing 수치가 너무 높습니다. 압력을 낮추거나 Pad 교체를 권장합니다.<br>";
+            if(pred_rr < 300) rec += "⚠️ <b>경고:</b> 제거율이 낮습니다. Slurry Flow나 Platen Speed를 올리세요.<br>";
+            if(rec === "") rec = "✅ <b>양호:</b> 예측되는 공정 지표 및 수율이 안정권입니다.";
+            document.getElementById('rec_text').innerHTML = "💡 " + rec;
+        }
+        
+        window.onload = runSimulation;
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+2026-08-20 16:15:45,165 - INFO - Starting preprocessing for data/overlay_A_train.csv
+2026-08-20 16:15:45,175 - INFO - Initial data shape: (805, 13)
+2026-08-20 16:15:45,180 - INFO - Dropped 5 duplicate rows.
+2026-08-20 16:15:45,184 - INFO - Converted 4 Kelvin temperature values to Celsius.
+2026-08-20 16:15:45,184 - INFO - Set 1 extremely low temperature values (< 10) to NaN for imputation.
+2026-08-20 16:15:45,188 - INFO - Dropped 27 rows due to missing values in ['field_x', 'field_y', 'reticle_id'].
+2026-08-20 16:15:45,194 - INFO - Imputed 8 missing values in 'align_quality' using median per tool_id.
+2026-08-20 16:15:45,199 - INFO - Imputed 8 missing values in 'ambient_temp_c' using median per tool_id.
+2026-08-20 16:15:45,200 - INFO - Final data shape: (773, 13)
+2026-08-20 16:15:45,217 - INFO - Processed data saved to data/processed/overlay_A_train_cleaned.csv
+2026-08-20 16:48:53,177 - INFO - Starting preprocessing for ../data/overlay_A_train.csv
+2026-08-20 16:48:53,183 - INFO - Initial data shape: (805, 13)
+2026-08-20 16:48:53,185 - INFO - Dropped 5 duplicate rows.
+2026-08-20 16:48:53,186 - INFO - Converted 4 Kelvin temperature values to Celsius.
+2026-08-20 16:48:53,187 - INFO - Set 1 extremely low temperature values (< 10) to NaN for imputation.
+2026-08-20 16:48:53,189 - INFO - Dropped 27 rows due to missing values in ['field_x', 'field_y', 'reticle_id'].
+2026-08-20 16:48:53,189 - INFO - Dropped 1 rows due to extreme coordinate outliers (|x| or |y| > 2.0).
+2026-08-20 16:48:53,193 - INFO - Imputed 8 missing values in 'align_quality' using median per tool_id.
+2026-08-20 16:48:53,195 - INFO - Imputed 8 missing values in 'ambient_temp_c' using median per tool_id.
+2026-08-20 16:48:53,195 - INFO - Final data shape: (772, 13)
+2026-08-20 16:48:53,202 - INFO - Processed data saved to ../data/processed/overlay_A_train_cleaned.csv
+2026-08-20 17:09:15,501 - INFO - Starting preprocessing for ../data/overlay_A_train.csv
+2026-08-20 17:09:15,504 - INFO - Initial data shape: (805, 13)
+2026-08-20 17:09:15,506 - INFO - Dropped 5 duplicate rows.
+2026-08-20 17:09:15,507 - INFO - Converted 4 Kelvin temperature values to Celsius.
+2026-08-20 17:09:15,507 - INFO - Set 1 extremely low temperature values (< 10) to NaN for imputation.
+2026-08-20 17:09:15,509 - INFO - Dropped 27 rows due to missing values in ['field_x', 'field_y', 'reticle_id'].
+2026-08-20 17:09:15,510 - INFO - Fixed 2 typo(s) in reticle_id.
+2026-08-20 17:09:15,510 - INFO - Dropped 1 rows due to extreme coordinate outliers (|x| or |y| > 2.0).
+2026-08-20 17:09:15,512 - INFO - Imputed 8 missing values in 'align_quality' using median per tool_id.
+2026-08-20 17:09:15,514 - INFO - Imputed 8 missing values in 'ambient_temp_c' using median per tool_id.
+2026-08-20 17:09:15,514 - INFO - Final data shape: (772, 13)
+2026-08-20 17:09:15,520 - INFO - Processed data saved to ../data/processed/overlay_A_train_cleaned.csv

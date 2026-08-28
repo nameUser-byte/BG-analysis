@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;font-family:'Segoe UI',sans-serif;">
+  <!-- Main spine -->
+  <line x1="80" y1="210" x2="760" y2="210" stroke="#334155" stroke-width="3" marker-end="url(#arr2)"/>
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <!-- Effect box -->
+  <rect x="760" y="180" width="90" height="60" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="805" y="206" text-anchor="middle" font-size="11" font-weight="bold" fill="#DC2626">SAW</text>
+  <text x="805" y="222" text-anchor="middle" font-size="11" font-weight="bold" fill="#DC2626">OOC</text>
+  <text x="805" y="238" text-anchor="middle" font-size="10" fill="#991B1B">6.83%</text>
+  <!-- Upper bones -->
+  <!-- Machine -->
+  <line x1="200" y1="210" x2="140" y2="100" stroke="#2563EB" stroke-width="2"/>
+  <text x="135" y="90" text-anchor="middle" font-size="12" font-weight="bold" fill="#1D4ED8">Machine</text>
+  <line x1="170" y1="155" x2="100" y2="130" stroke="#93C5FD" stroke-width="1.5"/>
+  <text x="95" y="125" text-anchor="end" font-size="9" fill="#1E40AF">Spindle Run-out</text>
+  <line x1="170" y1="155" x2="100" y2="155" stroke="#93C5FD" stroke-width="1.5"/>
+  <text x="95" y="152" text-anchor="end" font-size="9" fill="#1E40AF">Chuck 진동</text>
+  <line x1="170" y1="155" x2="100" y2="175" stroke="#93C5FD" stroke-width="1.5"/>
+  <text x="95" y="172" text-anchor="end" font-size="9" fill="#1E40AF">Linear Scale 노후화</text>
+  <!-- Method -->
+  <line x1="420" y1="210" x2="360" y2="80" stroke="#7C3AED" stroke-width="2"/>
+  <text x="355" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#5B21B6">Method</text>
+  <line x1="390" y1="145" x2="310" y2="110" stroke="#C4B5FD" stroke-width="1.5"/>
+  <text x="305" y="107" text-anchor="end" font-size="9" fill="#4C1D95">Blade 교체 기준 불명확</text>
+  <line x1="390" y1="145" x2="310" y2="130" stroke="#C4B5FD" stroke-width="1.5"/>
+  <text x="305" y="127" text-anchor="end" font-size="9" fill="#4C1D95">마모구간별 Speed 표준 없음</text>
+  <line x1="390" y1="145" x2="310" y2="150" stroke="#C4B5FD" stroke-width="1.5"/>
+  <text x="305" y="147" text-anchor="end" font-size="9" fill="#4C1D95">Coolant 공급 방향/각도</text>
+  <!-- Environment -->
+  <line x1="620" y1="210" x2="560" y2="90" stroke="#059669" stroke-width="2"/>
+  <text x="555" y="80" text-anchor="middle" font-size="12" font-weight="bold" fill="#065F46">Environment</text>
+  <line x1="590" y1="150" x2="510" y2="120" stroke="#6EE7B7" stroke-width="1.5"/>
+  <text x="505" y="117" text-anchor="end" font-size="9" fill="#065F46">클린룸 온습도 변동</text>
+  <line x1="590" y1="150" x2="510" y2="140" stroke="#6EE7B7" stroke-width="1.5"/>
+  <text x="505" y="137" text-anchor="end" font-size="9" fill="#065F46">Particle 유입</text>
+  <!-- Lower bones -->
+  <!-- Man -->
+  <line x1="280" y1="210" x2="200" y2="330" stroke="#DC2626" stroke-width="2"/>
+  <text x="195" y="345" text-anchor="middle" font-size="12" font-weight="bold" fill="#9F1239">Man</text>
+  <line x1="240" y1="270" x2="160" y2="290" stroke="#FCA5A5" stroke-width="1.5"/>
+  <text x="155" y="287" text-anchor="end" font-size="9" fill="#991B1B">Blade 마모율 관리 미흡</text>
+  <line x1="240" y1="270" x2="160" y2="310" stroke="#FCA5A5" stroke-width="1.5"/>
+  <text x="155" y="307" text-anchor="end" font-size="9" fill="#991B1B">100% 마모 후 계속 사용</text>
+  <!-- Material -->
+  <line x1="530" y1="210" x2="450" y2="340" stroke="#D97706" stroke-width="2"/>
+  <text x="445" y="355" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400E">Material</text>
+  <line x1="490" y1="275" x2="410" y2="295" stroke="#FDE68A" stroke-width="1.5"/>
+  <text x="405" y="292" text-anchor="end" font-size="9" fill="#78350F">Blade 소재 편차</text>
+  <line x1="490" y1="275" x2="410" y2="315" stroke="#FDE68A" stroke-width="1.5"/>
+  <text x="405" y="312" text-anchor="end" font-size="9" fill="#78350F">웨이퍼/테이프 신축</text>
+  <!-- 미수집 박스 -->
+  <rect x="50" y="370" width="760" height="40" rx="6" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <text x="430" y="386" text-anchor="middle" font-size="10" fill="#9A3412">⚠ 현재 데이터 미포함: Spindle Run-out 측정값, Chuck 진동 이력, Blade ID별 이력, 클린룸 환경 데이터</text>
+  <text x="430" y="402" text-anchor="middle" font-size="10" fill="#9A3412">→ 미수집 변수가 OOC의 실질적 원인일 가능성 높음 (AUC ≈ 0.5, R² ≈ 0)</text>
+</svg>
