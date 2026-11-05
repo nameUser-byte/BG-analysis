@@ -3,7 +3,7 @@
   "source_report": "i_BG_analysis_output\\artifacts\\index.html",
   "source_report_sha256": "680c951dd5e3a22b7cacb1c4be0a252297af04742d7bb40686ff8a0a54e8a628",
   "frozen_results_sha256": "2782864d1bad93bc5627f308b221a2a103e45144c525291f3071bb9b2b5c6d7c",
-  "entrypoint_sha256": "519c61bdcb3787f27c2d7b9f219fc2f6b395813cd362741e2e684eff0dd96f9e",
+  "entrypoint_sha256": "ccde5a0076588a8ece11c2921b47f4f7f776d5da6751a3ac64ba2b9bef64c4c0",
   "evidence_files": [
     "bg_evidence.csv",
     "error_analysis.json",
@@ -23,5 +23,6 @@
     "photo_zoom": "retained"
   },
   "static_qa": "PASS",
-  "prior_commit": "1447384c85f818beeb836777d7bd4cf58d4a965c"
+  "prior_commit": "1447384c85f818beeb836777d7bd4cf58d4a965c",
+  "hash_encoding": "UTF-8 / LF; compared against committed Git object and live HTTP response"
 }
