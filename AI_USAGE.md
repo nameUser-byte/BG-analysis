@@ -1,26 +1,16 @@
-# AI_USAGE.md (AI 협업 및 오류 수정 기록)
+# AI-assisted publication record
 
-이 문서는 `AGENTS.md`의 완료 기준에 따라, AI가 생성한 코드 및 결과물에서 발생한 오류와 이를 인간(사용자)이 어떻게 교정했는지 투명하게 기록한 문서입니다.
+Date: 2026-11-05
 
-## 1. 악성코드 우려 CDN (polyfill.io) 사용 오류
-* **발생 상황:** AI가 고급 HTML 리포트(`generate_adv_html.py`) 작성 시 브라우저 호환성을 위해 `polyfill.io` 스크립트를 자동 삽입함.
-* **인간의 개입:** 사용자가 즉각적으로 해당 CDN의 보안 위험성을 지적함.
-* **AI의 수정:** `polyfill.io` 스크립트를 삭제하고, 이후 절대 사용하지 않도록 `AGENTS.md`의 필수 규칙 9번(보안)에 해당 내용을 학습 및 기록함.
+The user approved correcting and publishing Photo, BG and SAW reports and providing resume link wording. The AI copied existing frozen validation reports, added English summaries, distinguished personal and AI roles, repaired evidence links, and adapted backend-only controls for static hosting. No model was retrained or metric improved in this update.
 
-## 2. 결과물 저장 경로 이탈
-* **발생 상황:** AI가 `index.html` 파일을 데이터(`*.csv`)가 있는 `3.Dry Etch/` 폴더가 아닌 프로젝트 루트(Root)에 생성함.
-* **인간의 개입:** "항상 index 파일은 csv 파일이 있는 폴더에 저장해 기억해"라고 명령함.
-* **AI의 수정:** 경로를 수정하여 다시 파일을 생성하고, `AGENTS.md` 필수 규칙 10번에 해당 원칙을 추가함.
+## Personal role retained
 
-## 3. MathJax 인라인 수식 기호 문법 오류
-* **발생 상황:** HTML 리포트에서 인라인 수식을 `$S$`, `$E_{th}$`로 표기하여 수식이 렌더링되지 않고 글자가 깨져 보임.
-* **인간의 개입:** 사용자가 특정 문턱값 부분의 글자가 깨진다고 피드백함.
-* **AI의 수정:** MathJax v3의 기본 설정에 맞춰 인라인 기호를 `\( S \)`와 같이 표준 문법으로 교체하여 렌더링 문제를 해결함.
+Proposed separating incoming from post-grinding measurements, shared comparisons with teammates, and organized observations, possible causes and follow-up checks.
 
-## 4. 파이썬 f-string 중괄호 이스케이프 오류
-* **발생 상황:** 다중공선성(VIF) 테이블을 파이썬 스크립트에서 HTML 변수(`vif_rows`)로 주입할 때, `{{vif_rows}}`처럼 중괄호를 두 번 사용하여 변수 값이 치환되지 않고 글자 그대로 출력됨.
-* **인간의 개입:** 사용자가 직접 브라우저 렌더링 오류 화면을 캡처(이미지)하여 전달함.
-* **AI의 수정:** 파이썬 코드의 오타(`{vif_rows}`)를 수정하여 동적 테이블이 정상적으로 생성되도록 조치함.
+## Changes and checks
 
----
-**결론:** 본 MVP 개발 과정에서 AI는 강력한 코딩 및 물리적 해석 능력을 보여주었으나, 특정 라이브러리의 보안성 검증이나 세부적인 문법(프론트엔드/백엔드 결합 시)에서 한계를 보였습니다. 사용자의 명확한 지시와 피드백이 AI의 환각(Hallucination)과 오류를 바로잡는 핵심적인 역할을 수행했습니다.
+- Education/synthetic context remains explicit.
+- Historical results, current validation and proposed checks remain distinct.
+- All figures remain inline Base64; formulas, diagram, zoom, tooltips and static JavaScript are retained.
+- Browser-based publication checks and frozen-source hashes are recorded by the publication audit, not assumed from file generation.

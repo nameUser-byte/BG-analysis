@@ -1,0 +1,54 @@
+{
+  "bg_analysis_100": {
+    "fail_count": 4998,
+    "resubstitution_importance_not_validation": {
+      "BG_Crack_Count_Before": 0.04126649233185351,
+      "BG_Scratch_Count_Before": 0.057866957338410296,
+      "BG_TTV_Before_um": 0.9008665503297363
+    },
+    "resubstitution_train_AUC_not_validation": 0.9171531964338862,
+    "post_TTV_ROC_for_that_target": 0.9998583822277077,
+    "warning": "full-data fit importance/after-process ROC; not incoming performance or causality"
+  },
+  "v3_50": {
+    "fail_count": 5003,
+    "resubstitution_importance_not_validation": {
+      "BG_Crack_Count_Before": 0.04356909952134931,
+      "BG_Scratch_Count_Before": 0.057402012807581566,
+      "BG_TTV_Before_um": 0.899028887671069
+    },
+    "resubstitution_train_AUC_not_validation": 0.9150125181275844,
+    "post_TTV_ROC_for_that_target": 0.999939857383163,
+    "warning": "full-data fit importance/after-process ROC; not incoming performance or causality"
+  },
+  "deep_RF_audit_not_candidate": {
+    "same_legacy_target": "Crack_after>3 OR TTV_after>3",
+    "train_AUC": 0.9567159134479293,
+    "holdout_AUC": 0.5112381625210682,
+    "holdout_AP": 0.2569350812881558,
+    "status": "legacy overfit investigation only; not selection candidate"
+  },
+  "prior_claims": {
+    "TTV_89_percent": {
+      "status": "hardcoded claim; compare above reproductions; impurity bias toward continuous features"
+    },
+    "Cpk_0_15": {
+      "descriptive_upper_index": 0.14925896428749125,
+      "status": "upper-only pooled descriptive index, NOT validated stable-process Cpk"
+    },
+    "corr_0_694": {
+      "value": 0.6938556989702652,
+      "status": "post/post association"
+    },
+    "mean_counts": {
+      "BG_Crack_Count_Before": 2.021,
+      "BG_Scratch_Count_Before": 2.93125,
+      "BG_Crack_Count_After": 2.2944,
+      "BG_Scratch_Count_After": 1.24085
+    },
+    "wear_RUL": "bg_time_series.py injects index*0.001 and assumes 1000-lot wheel cycle; simulated, not observed",
+    "DOE_60_percent_reduction": "DOE_Explanation_Report.md describes virtual DOE; no empirical reduction evidence",
+    "warp_TTV_equivalence": "TTV is thickness variation, not direct bow/warp measurement",
+    "pressure_RPM_SSD": "not measured; no cause attribution or optimal setting supported"
+  }
+}

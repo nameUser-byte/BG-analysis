@@ -1,0 +1,401 @@
+{
+  "classifier": "all_logistic",
+  "regressor": "median",
+  "classifier_gates": [
+    {
+      "model": "all_logistic",
+      "gain_vs_TTV": 0.05461255307060614,
+      "ci": {
+        "low": 0.024564714466388787,
+        "high": 0.08419274161280113,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "nonlinear_vs_simpler": [],
+      "gate": true
+    },
+    {
+      "model": "all_forest",
+      "gain_vs_TTV": 0.03520236831294232,
+      "ci": {
+        "low": 0.008024152923833964,
+        "high": 0.06629865868875755,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "nonlinear_vs_simpler": [
+        {
+          "baseline": "all_logistic",
+          "gain": -0.019410184757663818,
+          "ci": {
+            "low": -0.034541583486147824,
+            "high": -0.005385483352076296,
+            "resamples": 500,
+            "method": "paired singleton-Lot percentile; fitted-model conditional"
+          },
+          "gate": false
+        },
+        {
+          "baseline": "prior",
+          "gain": 0.030675023623008724,
+          "ci": {
+            "low": 0.010348391068947915,
+            "high": 0.05687982365636478,
+            "resamples": 500,
+            "method": "paired singleton-Lot percentile; fitted-model conditional"
+          },
+          "gate": true
+        }
+      ],
+      "gate": false
+    },
+    {
+      "model": "all_hist",
+      "gain_vs_TTV": 0.03333467892916392,
+      "ci": {
+        "low": 0.005561147164911234,
+        "high": 0.06340152083463971,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "nonlinear_vs_simpler": [
+        {
+          "baseline": "all_logistic",
+          "gain": -0.02127787414144222,
+          "ci": {
+            "low": -0.03605407750374699,
+            "high": -0.007039693543471001,
+            "resamples": 500,
+            "method": "paired singleton-Lot percentile; fitted-model conditional"
+          },
+          "gate": false
+        },
+        {
+          "baseline": "prior",
+          "gain": 0.02880733423923032,
+          "ci": {
+            "low": 0.009998606348006731,
+            "high": 0.05527621055200396,
+            "resamples": 500,
+            "method": "paired singleton-Lot percentile; fitted-model conditional"
+          },
+          "gate": true
+        }
+      ],
+      "gate": false
+    }
+  ],
+  "regressor_gates": [
+    {
+      "model": "all_linear",
+      "gain_vs_TTV": 0.016535667032023804,
+      "ci": {
+        "low": 0.006142534136218058,
+        "high": 0.026729616017662737,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "nonlinear_vs_simpler": [],
+      "gate": false
+    },
+    {
+      "model": "all_forest",
+      "gain_vs_TTV": 0.013053197850124265,
+      "ci": {
+        "low": 0.0012834689465398845,
+        "high": 0.024603801717142052,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "nonlinear_vs_simpler": [
+        {
+          "baseline": "all_linear",
+          "gain": -0.003482469181899539,
+          "ci": {
+            "low": -0.007800392538636042,
+            "high": 0.001277813436336151,
+            "resamples": 500,
+            "method": "paired singleton-Lot percentile; fitted-model conditional"
+          },
+          "gate": false
+        },
+        {
+          "baseline": "median",
+          "gain": -0.12347297168918181,
+          "ci": {
+            "low": -0.1466101150816491,
+            "high": -0.10124533560893907,
+            "resamples": 500,
+            "method": "paired singleton-Lot percentile; fitted-model conditional"
+          },
+          "gate": false
+        }
+      ],
+      "gate": false
+    },
+    {
+      "model": "all_hist",
+      "gain_vs_TTV": 0.01247388050588949,
+      "ci": {
+        "low": 0.000363833756933252,
+        "high": 0.0242735233310999,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "nonlinear_vs_simpler": [
+        {
+          "baseline": "all_linear",
+          "gain": -0.0040617865261343145,
+          "ci": {
+            "low": -0.009748028825380029,
+            "high": 0.0018389638123101912,
+            "resamples": 500,
+            "method": "paired singleton-Lot percentile; fitted-model conditional"
+          },
+          "gate": false
+        },
+        {
+          "baseline": "median",
+          "gain": -0.12405228903341659,
+          "ci": {
+            "low": -0.14766907928655076,
+            "high": -0.10152556483642187,
+            "resamples": 500,
+            "method": "paired singleton-Lot percentile; fitted-model conditional"
+          },
+          "gate": false
+        }
+      ],
+      "gate": false
+    }
+  ],
+  "ranking_gain_vs_prior_selection": 0.05008520838067254,
+  "ranking_ci": {
+    "low": 0.02456684931887671,
+    "high": 0.07964469119882267,
+    "resamples": 500,
+    "method": "paired singleton-Lot percentile; fitted-model conditional"
+  },
+  "actionable_research_ranking": true,
+  "production_use": false,
+  "selection_metrics_classification": {
+    "prior": {
+      "n": 2000,
+      "fail_count": 496,
+      "threshold": 0.5,
+      "average_precision": 0.248,
+      "roc_auc": 0.5,
+      "brier": 0.18649608999999998,
+      "fail_precision": 0.0,
+      "fail_recall": 0.0,
+      "fail_f1": 0.0,
+      "accuracy": 0.752,
+      "review_fraction": 0.0,
+      "tn": 1504,
+      "fp": 0,
+      "fn": 496,
+      "tp": 0,
+      "assumed_cost_5fn_1fp": 2480
+    },
+    "ttv_logistic": {
+      "n": 2000,
+      "fail_count": 496,
+      "threshold": 0.5,
+      "average_precision": 0.2434726553100664,
+      "roc_auc": 0.4932418121568291,
+      "brier": 0.18650538002591757,
+      "fail_precision": 0.0,
+      "fail_recall": 0.0,
+      "fail_f1": 0.0,
+      "accuracy": 0.752,
+      "review_fraction": 0.0,
+      "tn": 1504,
+      "fp": 0,
+      "fn": 496,
+      "tp": 0,
+      "assumed_cost_5fn_1fp": 2480
+    },
+    "no_ttv_logistic": {
+      "n": 2000,
+      "fail_count": 496,
+      "threshold": 0.5,
+      "average_precision": 0.2951945966309151,
+      "roc_auc": 0.56029552912663,
+      "brier": 0.18482267402686794,
+      "fail_precision": 0.5,
+      "fail_recall": 0.0020161290322580645,
+      "fail_f1": 0.004016064257028112,
+      "accuracy": 0.752,
+      "review_fraction": 0.001,
+      "tn": 1503,
+      "fp": 1,
+      "fn": 495,
+      "tp": 1,
+      "assumed_cost_5fn_1fp": 2476
+    },
+    "all_logistic": {
+      "n": 2000,
+      "fail_count": 496,
+      "threshold": 0.5,
+      "average_precision": 0.29808520838067254,
+      "roc_auc": 0.5617674105610845,
+      "brier": 0.18482962812995207,
+      "fail_precision": 0.5,
+      "fail_recall": 0.0020161290322580645,
+      "fail_f1": 0.004016064257028112,
+      "accuracy": 0.752,
+      "review_fraction": 0.001,
+      "tn": 1503,
+      "fp": 1,
+      "fn": 495,
+      "tp": 1,
+      "assumed_cost_5fn_1fp": 2476
+    },
+    "all_forest": {
+      "n": 2000,
+      "fail_count": 496,
+      "threshold": 0.5,
+      "average_precision": 0.2786750236230087,
+      "roc_auc": 0.5442824510981469,
+      "brier": 0.18620231482725724,
+      "fail_precision": 0.0,
+      "fail_recall": 0.0,
+      "fail_f1": 0.0,
+      "accuracy": 0.752,
+      "review_fraction": 0.0,
+      "tn": 1504,
+      "fp": 0,
+      "fn": 496,
+      "tp": 0,
+      "assumed_cost_5fn_1fp": 2480
+    },
+    "all_hist": {
+      "n": 2000,
+      "fail_count": 496,
+      "threshold": 0.5,
+      "average_precision": 0.2768073342392303,
+      "roc_auc": 0.5338720401509951,
+      "brier": 0.18718207478876747,
+      "fail_precision": 0.5,
+      "fail_recall": 0.020161290322580645,
+      "fail_f1": 0.03875968992248062,
+      "accuracy": 0.752,
+      "review_fraction": 0.01,
+      "tn": 1494,
+      "fp": 10,
+      "fn": 486,
+      "tp": 10,
+      "assumed_cost_5fn_1fp": 2440
+    },
+    "post_logistic": {
+      "n": 2000,
+      "fail_count": 496,
+      "threshold": 0.5,
+      "average_precision": 0.920373320089211,
+      "roc_auc": 0.9664604066575154,
+      "brier": 0.05668341057210284,
+      "fail_precision": 0.8932038834951457,
+      "fail_recall": 0.7419354838709677,
+      "fail_f1": 0.8105726872246696,
+      "accuracy": 0.914,
+      "review_fraction": 0.206,
+      "tn": 1460,
+      "fp": 44,
+      "fn": 128,
+      "tp": 368,
+      "assumed_cost_5fn_1fp": 684
+    },
+    "post_hist": {
+      "n": 2000,
+      "fail_count": 496,
+      "threshold": 0.5,
+      "average_precision": 0.9962106380284019,
+      "roc_auc": 0.9985555990477007,
+      "brier": 0.004020325304756276,
+      "fail_precision": 0.9860557768924303,
+      "fail_recall": 0.9979838709677419,
+      "fail_f1": 0.9919839679358717,
+      "accuracy": 0.996,
+      "review_fraction": 0.251,
+      "tn": 1497,
+      "fp": 7,
+      "fn": 1,
+      "tp": 495,
+      "assumed_cost_5fn_1fp": 12
+    }
+  },
+  "selection_metrics_regression": {
+    "median": {
+      "n": 2000,
+      "mae_um": 1.0712399999999997,
+      "rmse_um": 1.6533411323740785,
+      "r2": -0.12775866082973297,
+      "bias_um": -0.55648,
+      "p95_absolute_error_um": 3.9704999999999995,
+      "over_0_5um_fraction_assumed": 0.538
+    },
+    "ttv_linear": {
+      "n": 2000,
+      "mae_um": 1.2077661695393058,
+      "rmse_um": 1.555572630151165,
+      "r2": 0.0016752990473628548,
+      "bias_um": 0.007139315605598808,
+      "p95_absolute_error_um": 3.3960017689285955,
+      "over_0_5um_fraction_assumed": 0.788
+    },
+    "no_ttv_linear": {
+      "n": 2000,
+      "mae_um": 1.191985136575295,
+      "rmse_um": 1.5410313060758558,
+      "r2": 0.020252524220582657,
+      "bias_um": 0.008038018470929475,
+      "p95_absolute_error_um": 3.4408860500725944,
+      "over_0_5um_fraction_assumed": 0.7815
+    },
+    "all_linear": {
+      "n": 2000,
+      "mae_um": 1.191230502507282,
+      "rmse_um": 1.5399672212314794,
+      "r2": 0.02160509181638115,
+      "bias_um": 0.009837161675640114,
+      "p95_absolute_error_um": 3.41212246081255,
+      "over_0_5um_fraction_assumed": 0.78
+    },
+    "all_forest": {
+      "n": 2000,
+      "mae_um": 1.1947129716891816,
+      "rmse_um": 1.5468503676198742,
+      "r2": 0.01283933935110182,
+      "bias_um": 0.007807106488084365,
+      "p95_absolute_error_um": 3.3963996950282547,
+      "over_0_5um_fraction_assumed": 0.7775
+    },
+    "all_hist": {
+      "n": 2000,
+      "mae_um": 1.1952922890334163,
+      "rmse_um": 1.5474210404064064,
+      "r2": 0.012110827203957286,
+      "bias_um": 0.008981694883193567,
+      "p95_absolute_error_um": 3.3763682009797913,
+      "over_0_5um_fraction_assumed": 0.775
+    },
+    "post_linear": {
+      "n": 2000,
+      "mae_um": 0.700861008771293,
+      "rmse_um": 0.9897294946085943,
+      "r2": 0.5958670549861846,
+      "bias_um": -0.011025852851436849,
+      "p95_absolute_error_um": 2.008195020225175,
+      "over_0_5um_fraction_assumed": 0.522
+    },
+    "post_hist": {
+      "n": 2000,
+      "mae_um": 0.4707728637252126,
+      "rmse_um": 0.6894468190688255,
+      "r2": 0.803893145105659,
+      "bias_um": 0.007620897896301936,
+      "p95_absolute_error_um": 1.45187414258826,
+      "over_0_5um_fraction_assumed": 0.33
+    }
+  }
+}
